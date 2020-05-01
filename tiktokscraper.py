@@ -66,7 +66,7 @@ chrome_options.add_argument('--user-agent=DuckDuckBot')
 # chrome_options.add_argument('--headless')
 # chrome_options.add_argument('--disable-gpu')
 driver = webdriver.Chrome(chrome_options=chrome_options)
-# driver.minimize_window()
+driver.minimize_window()
 # Enter tiktok username here
 username = str(input('Enter tiktok username : '))
 # Enter the number of video here
