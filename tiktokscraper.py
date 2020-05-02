@@ -72,6 +72,6 @@ username = str(input('Enter tiktok username : '))
 # Enter the number of video here
 start = int(input('Enter no of first video : '))
 end = int(input('Enter no of last video : '))
-diff = start - end
+diff = end - start
 main()
 print(str(diff) + ' videos of ' + username + ' downloaded successfully. ')
