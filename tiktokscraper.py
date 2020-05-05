@@ -58,6 +58,13 @@ def main():
         i = i + 1
 
 
+# Enter tiktok username here
+username = str(input('Enter tiktok username : '))
+# Enter the number of video here
+start = int(input('Enter no of first video : '))
+end = int(input('Enter no of last video : '))
+diff = end - start
+
 # Changed the chrome options to DuckDuckBot or you can also use GoogleBot so that tiktok allows you to stay within it's territory and lets you scrape data
 chrome_options = Options()
 chrome_options.add_argument('--user-agent=DuckDuckBot')
@@ -66,12 +73,5 @@ chrome_options.add_argument('--user-agent=DuckDuckBot')
 # chrome_options.add_argument('--headless')
 # chrome_options.add_argument('--disable-gpu')
 driver = webdriver.Chrome(chrome_options=chrome_options)
-driver.minimize_window()
-# Enter tiktok username here
-username = str(input('Enter tiktok username : '))
-# Enter the number of video here
-start = int(input('Enter no of first video : '))
-end = int(input('Enter no of last video : '))
-diff = end - start
 main()
 print(str(diff) + ' videos of ' + username + ' downloaded successfully. ')
